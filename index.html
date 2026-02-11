@@ -1,158 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Mohamed AITMESSAOUD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mohamed AITMESSAOUD</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f4f4;
-        }
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .container {
-            display: flex;
-            max-width: 1000px;
-            margin: 40px auto;
-            background: white;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-        /* Colonne gauche */
-        .left {
-            width: 30%;
-            background-color: #e9e9e9;
-            padding: 30px;
-            text-align: center;
-        }
+    .hero {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
 
-        .left h2 {
-            letter-spacing: 3px;
-            font-size: 14px;
-            margin-top: 40px;
-            border-bottom: 2px solid #777;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
 
-        .left p {
-            font-size: 14px;
-            color: #333;
-            line-height: 1.6;
-        }
+    .card {
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-        /* Colonne droite */
-        .right {
-            width: 70%;
-            padding: 40px;
-        }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
 
-        .right h1 {
-            margin-top: 0;
-            font-size: 28px;
-        }
+    .btn-custom {
+      background-color: #2c3e50;
+      color: white;
+    }
 
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h3 {
-            letter-spacing: 4px;
-            font-size: 16px;
-            border-bottom: 2px solid #777;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        .date {
-            font-weight: bold;
-        }
-
-        @media(max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .left, .right {
-                width: 100%;
-            }
-        }
-    </style>
+    .btn-custom:hover {
+      background-color: #1a252f;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-
-    <!-- COLONNE GAUCHE -->
-    <div class="left">
-
-        <h2>PROFIL</h2>
-        <p>
-            Étudiant motivé en BTS SIO, sérieux et organisé.
-            Je souhaite développer mes compétences en informatique
-            et acquérir de l'expérience professionnelle.
-        </p>
-
-        <h2>CONTACT</h2>
-        <p>
-            📍 8 rue de la brasserie grüber<br>
-            ✉ aitemessaoud65@gmail.com<br>
-            📞 07 65 63 36 81
-        </p>
-
-        <h2>CENTRES D’INTÉRÊT</h2>
-        <p>
-            Sport : Musculation<br>
-            Voyages
-        </p>
-
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mohamed AITMESSAOUD</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Expériences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- COLONNE DROITE -->
-    <div class="right">
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Mohamed AITMESSAOUD</h1>
+    <p class="lead">Étudiant en BTS SIO</p>
+    <a href="#contact" class="btn btn-light mt-3">Me contacter</a>
+  </div>
+</section>
 
-        <h1>Mohamed<br>AITMESSAOUD</h1>
+<!-- A PROPOS -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title">À PROPOS</h2>
+    <p class="text-center">
+      Étudiant motivé en BTS SIO, sérieux et organisé.
+      Je souhaite développer mes compétences en informatique
+      et acquérir de l'expérience professionnelle dans le domaine du numérique.
+    </p>
+  </div>
+</section>
 
-        <div class="section">
-            <h3>FORMATION</h3>
-            <p><span class="date">2025 - 2027 :</span> BTS SIO</p>
-            <p><span class="date">2023 - 2025 :</span> Bac STI2D</p>
-            <p><span class="date">2022 - 2023 :</span> Seconde générale</p>
+<!-- FORMATION -->
+<section id="formation" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">FORMATION</h2>
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>2025 - 2027</h5>
+          <p>BTS SIO</p>
         </div>
+      </div>
 
-        <div class="section">
-            <h3>EXPÉRIENCES</h3>
-            <p><span class="date">01/2022 :</span> Stage chez Aixam</p>
-            <ul>
-                <li>Stage dans un garage automobile</li>
-                <li>Participation à l’inventaire</li>
-            </ul>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>2023 - 2025</h5>
+          <p>Bac STI2D</p>
         </div>
+      </div>
 
-        <div class="section">
-            <h3>COMPÉTENCES</h3>
-            <p><strong>Langues :</strong></p>
-            <ul>
-                <li>Français : Langue maternelle</li>
-                <li>Anglais : Niveau B2</li>
-            </ul>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>2022 - 2023</h5>
+          <p>Seconde générale</p>
         </div>
-
+      </div>
     </div>
+  </div>
+</section>
 
-</div>
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="section-title">EXPÉRIENCES</h2>
 
+    <div class="card p-4">
+      <h5>Stage - Janvier 2022</h5>
+      <p><strong>Entreprise :</strong> Aixam</p>
+      <ul>
+        <li>Stage dans un garage automobile</li>
+        <li>Participation à l’inventaire</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">COMPÉTENCES</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Langues</h5>
+        <ul>
+          <li>Français : Langue maternelle</li>
+          <li>Anglais : Niveau B2</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Centres d’intérêt</h5>
+        <ul>
+          <li>Musculation</li>
+          <li>Voyages</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title">CONTACT</h2>
+
+    <div class="text-center">
+      <p>📍 8 rue de la brasserie grüber</p>
+      <p>📧 aitemessaoud65@gmail.com</p>
+      <p>📞 07 65 63 36 81</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mohamed AITMESSAOUD - Tous droits réservés
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
